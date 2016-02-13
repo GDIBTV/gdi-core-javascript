@@ -123,20 +123,20 @@
 					Two ways to include jQuery on your page:
 					<div class = "fragment">
 						Download the library, store it locally:
-					<pre><code contenteditable class = "html">
-	&lt;head>
-		&lt;script type="text/javascript" src="jquery.js">&lt;/script>
-	&lt;/head>
-					</code></pre>
+						<pre><code contenteditable class = "html">
+&lt;head>
+	&lt;script type="text/javascript" src="jquery.js">&lt;/script>
+&lt;/head>
+						</code></pre>
 					</div>
 					<div class = "fragment">
-					Include the the live library:
-					<pre><code contenteditable class = "html">
-	&lt;head>
-		&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js">
-		&lt;/script>
-	&lt;/head>
-					</code></pre>
+						Include the the live library:
+						<pre><code contenteditable class = "html">
+&lt;head>
+	&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js">
+	&lt;/script>
+&lt;/head>
+						</code></pre>
 					</div>
 					<div class = "fragment">
 						Note: live code can change! It's always best to download
@@ -151,7 +151,7 @@
 					<ul>
 						<li class = "fragment">Element name (div, p)
 						<pre><code contenteditable class = "javascript">
-			var divs = $("div"); // All divs on page
+var divs = $("div"); // All divs on page
 						</code></pre>
 						</li>
 						<li class = "fragment">ID name (#mainpicture, #results)
@@ -179,7 +179,7 @@ var images = $(".picture"); //All images with class picture
 					<div class = "fragment">
 						Action format
 						<pre><code contenteditable class = "javascript">
-				$(selector).action();     
+$(selector).action();     
 						</code></pre>
 					</div>
 				</section>
@@ -189,23 +189,23 @@ var images = $(".picture"); //All images with class picture
 					<h3>Updating attributes and css</h3>
 					<div class = "fragment">
 						<pre><code contenteditable class = "html">
-	&lt;img id="mainpicture" src="http://girldevelopit.com/assets/pink-logo.png">         
+&lt;img id="mainpicture" src="http://girldevelopit.com/assets/pink-logo.png">
 						</code></pre>
 					</div>
 					<div class = "fragment">
 						Attribute get and set
 						<pre><code contenteditable class = "javascript">
-	var img = $('#mainpicture');
-	img.attr('src');
-	img.attr('src', 'http://girldevelopit.com/assets/pink-logo.png');
+var img = $('#mainpicture');
+img.attr('src');
+img.attr('src', 'http://girldevelopit.com/assets/pink-logo.png');
 						</code></pre>
 					</div>
 					<div class = "fragment">
 						CSS property get and set
 						<pre><code contenteditable class = "javascript">
-	var img = $('#mainpicture');
-	img.css('width');
-	img.css('width', '200px');
+var img = $('#mainpicture');
+img.css('width');
+img.css('width', '200px');
 						</code></pre>
 					</div>
 				</section>
@@ -215,15 +215,15 @@ var images = $(".picture"); //All images with class picture
 					<h3>Updating values and html</h3>
 					<div class = "fragment">
 						<pre><code contenteditable class = "html">
-	&lt;div id = "results">Boo!&lt;/div>         
+&lt;div id = "results">Boo!&lt;/div>         
 						</code></pre>
 					</div>
 					<div class = "fragment">
 						Get and set html value
 						<pre><code contenteditable class = "javascript">
-	var div = $('#results');
-	div.html();
-	div.html('New html!');
+var div = $('#results');
+div.html();
+div.html('New html!');
 						</code></pre>
 					</div>
 				</section>
@@ -233,21 +233,21 @@ var images = $(".picture"); //All images with class picture
 					<h3>Append and Prepend</h3>
 					<div class = "fragment">
 						<pre><code contenteditable class = "html">
-	&lt;div id = "results">Boo!&lt;/div>         
+&lt;div id = "results">Boo!&lt;/div>         
 						</code></pre>
 					</div>
 					<div class = "fragment">
 						Append html
 						<pre><code contenteditable class = "javascript">
-		var div = $('#results');
-		div.append('Additional html');
+var div = $('#results');
+div.append('Additional html');
 						</code></pre>
 					</div>
 					<div class = "fragment">
 						Prepend html
 						<pre><code contenteditable class = "javascript">
-		var div = $('#results');
-		div.prepend('Additional html (on top)');
+var div = $('#results');
+div.prepend('Additional html (on top)');
 						</code></pre>
 					</div>
 				</section>
@@ -256,7 +256,7 @@ var images = $(".picture"); //All images with class picture
 					<h3>Creating new element</h3>
 					<div class = "fragment">
 						<pre><code contenteditable class = "javascript">
-		var newDiv = $('&lt;div>&lt;/div>');
+var newDiv = $('&lt;div>&lt;/div>');
 						</code></pre>
 					</div>
 					<div class = "fragment">
@@ -281,9 +281,9 @@ var images = $(".picture"); //All images with class picture
 					<div class = "fragment">
 						Document ready is a method called when the page is loaded
 						<pre><code contenteditable class = "javascript">
-				$(document).ready(function(){
-					
-				});
+$(document).ready(function(){
+	// your code here
+});
 						</code></pre>
 					</div>
 					<div class = "fragment left-align">
@@ -306,17 +306,17 @@ var images = $(".picture"); //All images with class picture
 				
 				<section>
 					<h3>Handling events</h3>
-			<pre><code contenteditable class = "javascript">
-	$(selector).mouseenter(function(){
-		//code when the mouse enters
-	})
-			</code></pre>
+					<pre><code contenteditable class = "javascript">
+$(selector).mouseenter(function(){
+	//code when the mouse enters
+})
+					</code></pre>
 					<div class = "fragment">
-			<pre><code contenteditable class = "javascript">
-	$('.box').mouseenter(function(){
-		$(this).css('background-color', 'purple')
-	})
-			</code></pre>
+						<pre><code contenteditable class = "javascript">
+$('.box').mouseenter(function(){
+	$(this).css('background-color', 'purple')
+})
+						</code></pre>
 					</div>
 					<div class = "fragment left-align">
 						<div>The <span class = "green">$(this)</span> selector in jQuery refers to the element on whom the action was called.</div>
@@ -328,24 +328,24 @@ var images = $(".picture"); //All images with class picture
 					<h3>Handling event examples</h3>
 					<div class = "fragment">
 						<pre><code contenteditable class = "javascript">
-			$('.box').mouseenter(function(){
-				$(this).css('background-color', 'purple')
-			})
+$('.box').mouseenter(function(){
+	$(this).css('background-color', 'purple')
+})
 						</code></pre>
 					</div>
 					<div class = "fragment">
-					<pre><code contenteditable class = "javascript">
-			$('.box').mouseleave(function(){
-				$(this).css('background-color', 'orange')
-			})
-					</code></pre>
+						<pre><code contenteditable class = "javascript">
+$('.box').mouseleave(function(){
+	$(this).css('background-color', 'orange')
+})
+						</code></pre>
 					</div>
 					<div class = "fragment">
-					<pre><code contenteditable class = "javascript">
-			$('.box').click(function(){
-				$(this).css('background-color', 'green')
-			})
-					</code></pre>
+						<pre><code contenteditable class = "javascript">
+$('.box').click(function(){
+	$(this).css('background-color', 'green')
+})
+						</code></pre>
 					</div>
 				</section>
 				
@@ -353,19 +353,19 @@ var images = $(".picture"); //All images with class picture
 					<h3>Combining events</h3>
 					<p>If you want multiple events to happen on the same element, you should use the bind method</p>
 					<div class = "fragment">
-					<pre><code contenteditable class = "javascript">
-			$('.box').bind({
-				click: function() {
-					$(this).css('background-color', 'green')
-				},
-				mouseenter: function() {
-					$(this).css('background-color', 'purple')
-				},
-				mouseleave: function(){
-					$(this).css('background-color', 'orange')
-				}
-			});
-					</code></pre>
+						<pre><code contenteditable class = "javascript">
+$('.box').bind({
+	click: function() {
+		$(this).css('background-color', 'green')
+	},
+	mouseenter: function() {
+		$(this).css('background-color', 'purple')
+	},
+	mouseleave: function(){
+		$(this).css('background-color', 'orange')
+	}
+});
+						</code></pre>
 					</div>
 				</section>
 				
@@ -432,17 +432,17 @@ var images = $(".picture"); //All images with class picture
 					<p>You can use JavaScript to get values from a form</p>
 					<div class = "fragment">
 						<pre><code contenteditable class = "javascript">
-		$('#name').val();
-		$('select#dinosaur').val();
-		$('input:radio[name=popcorn]:checked').val();
+$('#name').val();
+$('select#dinosaur').val();
+$('input:radio[name=popcorn]:checked').val();
 						</code></pre>
 					</div>
 					<div class = "fragment">
 						Or set values of a form
 						<pre><code contenteditable class = "javascript">
-		$('#name').val('Mitch');
-		$('select#dinosaur').val('stego');
-		$('input:radio[name=popcorn]:checked').val('no');
+$('#name').val('Mitch');
+$('select#dinosaur').val('stego');
+$('input:radio[name=popcorn]:checked').val('no');
 						</code></pre>
 					</div>
 				</section>
@@ -452,10 +452,10 @@ var images = $(".picture"); //All images with class picture
 					<p>jQuery has an event for form submission</p>
 					<div class = "fragment">
 						<pre><code contenteditable class = "javascript">
-			$('#about-me').submit(function(event){
-						//code to execute after submission
-						return false;
-				});
+$('#about-me').submit(function(event){
+	//code to execute after submission
+	return false;
+});
 						</code></pre>
 						<span class = "yellow">"return false"</span> to prevent the form trying to submit to a server.
 					</div>
@@ -476,7 +476,7 @@ var images = $(".picture"); //All images with class picture
 				<!-- -->
 				<section>
 					<h2>Questions?</h2>
-					<div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
+					<div style = "font-size:1200%; height:100%; margin-top:20%" class ="blue">?
 						<div class ="clear"></div></div>
 				</section>
 			</div>
