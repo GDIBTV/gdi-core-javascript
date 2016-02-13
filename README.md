@@ -2,7 +2,8 @@ Slides and materials are hosted at [http://gdibtv.github.io/gdi-core-javascript/
 
 # CORE JAVASCRIPT/JQUERY
 
-This is a version of the Girl Develop It Core Intro Javascript/JQuery course. Material based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston and Leo Newball.
+This is a version of the Girl Develop It Core Intro class = "javascript">
+JavaScript/JQuery course. Material based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston and Leo Newball.
 
 The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
 
@@ -10,11 +11,13 @@ The course is meant to be taught in 4 two-hour sections. Each of the slides and 
 
 ### Class 1
 
-Introduction to Javascript. What is it? Why does it matter?
+Introduction to class = "javascript">
+JavaScript. What is it? Why does it matter?
 You will go through a history of JavaScript, what it is and how it interacts with the browser. You will go through basic JavaScript concepts including variables, data types, if/else statements and functions. Students will create a basic calculator with static numbers, incorporating variables, if/else, and lastly functions.
 
 ### Class 2
-Deeper into Javascript.
+Deeper into class = "javascript">
+JavaScript.
 
 You will go through the more complex data types such as objects and arrays. You will also introduce looping logic through while and for. You will introduce the DOM and its role in client side interaction. Students will learn how to loop through objects and arrays and display results on their site
 
