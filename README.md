@@ -1,6 +1,8 @@
-# CORE  JAVASCRIPT/JQUERY
+Slides and materials are hosted at [http://gdibtv.github.io/gdi-core-javascript/](http://gdibtv.github.io/gdi-core-javascript/).
 
-This is the official Girl Develop It Core Intro Javascript course. Material based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston and Leo Newball.
+# CORE JAVASCRIPT/JQUERY
+
+This is a version of the Girl Develop It Core Intro Javascript/JQuery course. Material based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston and Leo Newball.
 
 The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
 
@@ -26,24 +28,3 @@ Introduce jQuery. Discuss its role as a javascript library (not a different lang
 
 Introduce APIs, REST, and AJAX. Students will interact with the Meetup API (chosen because all students are already aware of Meetup and calls can be made without oAuth authentication). Bonus intros to jQuery UI, and the concept of jQuery plugins
 
-
-## Theme customization
-
-You can change theme colors by changing the theme css to any of the following options:
-```html
-  <link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
-  <link rel="stylesheet" href="css/theme/gdilight.css" id="theme">
-  <link rel="stylesheet" href="css/theme/gdisunny.css" id="theme">
-  <link rel="stylesheet" href="css/theme/gdicool.css" id="theme">
-```
-You can change the text editor theme by changing the highlight.js css to the following options:
-```html
-  <link rel="stylesheet" href="lib/css/dark.css">
-  <link rel="stylesheet" href="lib/css/light.css">
-```
-You can change transition by changing the reveal transition property in Reveal.initialize
-```javascript
-  Reveal.initialize({
-  				transition:  'default', // default/cube/page/concave/zoom/linear/none
-  			});
-```
