@@ -4,4 +4,4 @@ var perDay = 2;
 
 var days = (oldAge - age) * 365;
 var total = perDay * days;
-alert("You will need " + total + " to last you until the ripe old age of " + oldAge);
+alert("You will need " + total + " to last you until your old age of " + oldAge);

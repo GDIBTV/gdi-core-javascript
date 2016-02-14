@@ -1,0 +1,73 @@
+/* Class-specific slide styling */
+
+/*== All Sessions */
+.reveal img.logo {
+	max-height: 400px;
+	border: none;
+	box-shadow: none;
+}
+.reveal img {
+	max-height: 75vh;
+}
+
+.reveal .question-mark {
+	font-size:1200%; 
+	height:100%; 
+	clear: both;
+}
+
+.reveal .large { font-size: larger !important;}
+
+.reveal small { vertical-align: middle; }
+
+.reveal .columns {
+	margin-right: -10px;
+	margin-left: -10px;
+	overflow: hidden;
+	clear: both;
+}
+.reveal .half {
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.reveal pre code {
+	word-wrap: break-word;
+}
+
+.reveal .splash > *,
+.reveal .develop-it > * {
+	color: #fff;
+}
+@media print {
+	.reveal .splash > *,
+	.reveal .develop-it > * {
+		color: #000;
+	}
+	.reveal .slides section.hide-pdf {
+		display: none !important;
+	}
+	.reveal footer {
+		position: absolute;
+		background-color: white;
+	}
+}
+
+.reveal .left-align {
+	text-align: left;
+}
+
+.reveal dd { margin-bottom: .5em; }
+.reveal ul + p { margin-top: .5em; }
+.reveal strong, 
+.reveal .bold-override {  /* bold-override needed, because the fonts are set up without weights */
+	font-family: "Gotham-Bold", "Gotham-Book", "Helvetica", Arial, sans-serif; 
+}
+.reveal table { margin-left: auto; margin-right: auto;}
+
+.reveal .slides section .fragment.visible.muted { opacity: .35;}
+
+.reveal .show-outline { outline: 1px solid #000; }

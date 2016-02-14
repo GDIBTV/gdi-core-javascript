@@ -1,5 +1,5 @@
 function calculate(){
-    var age = 26;
+    var age = prompt('How old are you?', 36);
     var oldAge = 96;
     var perDay = 2;
 
