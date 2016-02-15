@@ -7,7 +7,7 @@ function calculate(){
         alert("You're either not yet born or already older than your maximum age. Either way, you don't need any!");
     } else if (isNaN(age)) {
         alert("Sorry, " + age + " is not a number! We can't calculate anything.");
-    } else if (age !== "") {
+    } else if (age !== "" && age !== null) {
         var days = (oldAge - age) * 356;
         var total = perDay * days;
         if(total > 40000){

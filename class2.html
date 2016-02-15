@@ -60,9 +60,9 @@
 				<!-- Welcome-->
 				<section>
 					<h3>Welcome!</h3>
-					<div class = "left-align">
+					<div class="left-align">
 					<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-					<p class ="green">Some "rules"</p>
+					<p class="green">Some "rules"</p>
 					<ul>
 						<li>We are here for you!</li>
 						<li>Every question is important</li>
@@ -76,34 +76,34 @@
 				<section>
 					<h3>Loops</h3>
 					<p>Sometimes you want to go through a piece of code multiple times</p>
-					<p class = "fragment">Why?</p>
+					<p class="fragment">Why?</p>
 					<ul>
-						<li class = "fragment">Showing a timer count down</li>
-						<li class = "fragment">Displaying the results of a search</li>
-						<li class = "fragment">Adding images to a slideshow</li>
+						<li class="fragment">Showing a timer count down</li>
+						<li class="fragment">Displaying the results of a search</li>
+						<li class="fragment">Adding images to a slideshow</li>
 					</ul>
 				</section>
 				
 				 <section>
 					<h3>The while loop</h3>
 					<p>The while loop tells JS to repeat statements while a condition is true:</p>
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 while (expression) {
 	// statements to repeat
 }
 					</code></pre>
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 var x = 0;
 while (x < 5) {
 	console.log(x);
 	x++;
 }
 					</code></pre>
-					<div class = "fragment">
+					<div class="fragment">
 						Review: '++' means increment by 1!
 					</div>
-					<div class = "fragment">
-						<div class = "yellow">Danger!!</div>
+					<div class="fragment">
+						<div class="yellow">Danger!!</div>
 						<p>What happens if we forget x++;?</p>
 						<p>The loop will never end!!</p>
 					</div>
@@ -112,17 +112,17 @@ while (x < 5) {
 				<section>
 					<h3>The for loop</h3>
 					<p>The for loop is a safer way of looping</p>
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 for (initialize; condition; update) {
 	// statements to repeat
 }
 					</code></pre>
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 for (var i = 0; i < 5; i++) {
 	console.log(i);
 }
 					</code></pre>
-					<div class = "fragment">
+					<div class="fragment">
 						Less danger of an infinite loop. All conditions are at the top!
 					</div>
 				</section>
@@ -130,39 +130,39 @@ for (var i = 0; i < 5; i++) {
 				<!-- Arrays -->
 				<section>
 					<h3>Array</h3>
-					<p>An array is a data-type that holds an ordered list of values, of any type:</p>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<p>An array is a data type that holds an ordered list of values, of any type:</p>
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 var arrayName = [element0, element1, ...];
 						</code></pre>
 					</div>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
 var favoriteNumbers = [16, 27, 88];
 var luckyThings = ['Rainbows', 7, 'Horseshoes'];
 						</code></pre>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 						The length property reports the size of the array:
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 console.log(rainbowColors.length);
 						</code></pre>
 					</div>
 				</section>
 				
 				<section>
-					<h3>Arrays -- returning values</h3>
-					<p class = "fragment">You can access items with "bracket notation".</p> 
-					<div class = "fragment">
+					<h3>Arrays&mdash;returning values</h3>
+					<p class="fragment">You can access items with "bracket notation".</p> 
+					<div class="fragment">
 						The number inside the brackets is called an "index"
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 var arrayItem = arrayName[indexNum];
 						</code></pre>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 						Arrays in JavaScript are "zero-indexed", which means we start counting from zero.
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
 var firstColor = rainbowColors[0];
 var lastColor = rainbowColors[6];
@@ -171,24 +171,24 @@ var lastColor = rainbowColors[6];
 				</section>
 				
 				<section>
-					<h3>Arrays -- updating values</h3>
-					<div class = "fragment">
+					<h3>Arrays&mdash;updating values</h3>
+					<div class="fragment">
 					You can also use bracket notation to change the item in an array:
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 var awesomeAnimals = ['Corgis', 'Otters', 'Octopi'];
 awesomeAnimals[0] = 'Bunnies';
 						</code></pre>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 					Or to add to an array:
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 awesomeAnimals[4] = 'Corgis';
 						</code></pre>
 					</div>
 					
-					<div class = "fragment">
+					<div class="fragment">
 				 You can also use the push method:
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 awesomeAnimals.push('Ocelots');
 						</code></pre>
 					</div>
@@ -197,7 +197,7 @@ awesomeAnimals.push('Ocelots');
 				<section>
 					<h3>Loops and Arrays</h3>
 					Use a for loop to easily look at each item in an array:
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
 for (var i = 0; i < rainbowColors.length; i++) {
 	console.log(rainbowColors[i]);
@@ -209,12 +209,12 @@ for (var i = 0; i < rainbowColors.length; i++) {
 				<section>
 					<h3>Let's Develop It</h3>
 					<ul>
-						<li>Add a new link to the exercise from last week</li>
-						<li>Add an onclick to the link for a function called favoriteThings()</li>
-						<li>Create a new function called favoriteThings() in the javascript file</li>
+						<li>Add a new button to the exercise from last week</li>
+						<li>Add an onclick to the button for a function called favoriteThings()</li>
+						<li>Create a new function called favoriteThings() in your javascript file</li>
 						<li>In the function, create an array and loop through the results</li>
 						<li>Post the results in an alert "My favorite things are XX, YY, ZZ'</li>
-						<li>Bonus -- add an 'and' in the sentence before the last item</li>
+						<li>Bonus&mdash;add an 'and' in the sentence before the last item</li>
 					</ul>
 				</section>
 				
@@ -222,15 +222,15 @@ for (var i = 0; i < rainbowColors.length; i++) {
 				<section>
 					<h3>Objects</h3>
 					<p>Objects are a data type that let us store a collection of properties and methods.</p>
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 var objectName = { 
 	propertyName: propertyValue,
 	propertyName: propertyValue,
 	...
 };
 					</code></pre>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 var charlie = {
 	age: 8,
 	name: "Charlie Brown",
@@ -242,10 +242,10 @@ var charlie = {
 				</section>
 				
 				<section>
-					<h3>Objects -- returning values</h3>
+					<h3>Objects&mdash;returning values</h3>
 					<p>Access values of "properties" using "dot notation":</p>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 var charlie = {
 	age: 8,
 	name: "Charlie Brown",
@@ -254,47 +254,47 @@ var charlie = {
 };
 			</code></pre>
 					</div> 
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 var pet = charlie.pet;
 						</code></pre>
 					</div>
 				</section>
 				
 				<section>
-					<h3>Objects -- returning values</h3>
-					<div class = "fragment">
+					<h3>Objects&mdash;returning values</h3>
+					<div class="fragment">
 						Or using "bracket notation" (like arrays):
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 var name = charlie['name'];
 						</code></pre>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 						Non-existent properties will return undefined:
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 var gender = charlie.gender
 						</code></pre>
 					</div>
 				</section>
 				
 				<section>
-					<h3>Objects -- changing values</h3>
+					<h3>Objects&mdash;changing values</h3>
 					<p>Use dot or bracket notation with the assignment operator to change objects.</p>
-					<div class = "fragment">
+					<div class="fragment">
 					Change existing properties:
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 charlie.name = "Chuck";
 					</code></pre>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 						Or add new properties:
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 charlie.gender = "male";
 						</code></pre>
 					</div>
-					<div class ="fragment">
+					<div class="fragment">
 					You can also delete properties:
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 delete charlie.gender;
 					</code></pre>
 					</div>
@@ -303,8 +303,8 @@ delete charlie.gender;
 				<section>
 					<h3>Arrays of Objects</h3>
 					<p>Arrays can hold objects too!</p>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 var peanuts = [
 	{name: "Charlie Brown", 
 	 pet: "Snoopy"},
@@ -313,9 +313,9 @@ var peanuts = [
 ];
 						</code></pre>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 						That means we can use a for loop!
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 for (var i = 0; i < peanuts.length; i++) {
 	var peanut = peanuts[i];
 	console.log(peanut.name + ' has a pet named ' + peanut.pet + '.');
@@ -327,21 +327,21 @@ for (var i = 0; i < peanuts.length; i++) {
 				<section>
 					<h3>Objects in functions</h3>
 					<p>You can pass an object into a function as a parameter</p>
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 var peanut ={
 	name: "Charlie Brown", 
 	pet: "Snoopy"
 };
 					</code></pre>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 function describeCharacter(character){
 	console.log(character.name + ' has a pet named ' + character.pet + '.');
 }
 						</code></pre>
 					</div>
-				 <div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+				 <div class="fragment">
+						<pre><code contenteditable class="javascript">
 describeCharacter(peanut);
 						</code></pre>
 					</div>
@@ -351,12 +351,12 @@ describeCharacter(peanut);
 				<section>
 					<h3>Let's Develop It</h3>
 					<ul>
-						<li>Add another link that calls the function myFriends() onclick</li>
-						<li>Add a new function to the javascript myFriends</li>
+						<li>Add another button that calls the function myFriends() when clicked</li>
+						<li>Add a new function to the javascript named myFriends</li>
 						<li>In the function, create an array of friends objects, with their names and hair colors</li>
 						<li>Use a for loop to go through each friend and describe them</li>
 						<li>Alert the results</li>
-						<li>Bonus -- make a separate functions that describe the friends</li>
+						<li>Bonus&mdash;make a separate function that describes the friend</li>
 					</ul>
 				</section>
 				
@@ -364,20 +364,20 @@ describeCharacter(peanut);
 				<section>
 					<h3>DOM</h3>
 					<ul>
-						<li class = "fragment">"Document Object Model"</li>
-						<li class = "fragment">A way to interact with the HTML elements on a webpage</li>
-						<li class = "fragment">Chrome and Firefox -- Right click --> Inspect Element</li>
+						<li class="fragment">"Document Object Model"</li>
+						<li class="fragment">A way for JavaScript to interact with the HTML elements on a webpage</li>
+						<li class="fragment">Look at it with broswer development tools! Right click > Inspect Element</li>
 					</ul>
-					<img src = "images/dom.png" class = "fragment">
+					<img src = "images/dom.png" class="fragment">
 				</section>
 				
 				<section>
 					<h3>DOM Interaction</h3>
-					<p class = "fragment">On every webpage, the document object gives us ways of accessing and changing the DOM.</p>
-					<p class = "fragment left-align">Every DOM "node" has properties. They are connected like a family tree.</p>   
-					<p class = "fragment left-align"> Parent (parentNode), children (childNodes, firstChild), siblings (prevSibling, nextSibling)</p> 
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<p class="fragment">On every webpage, the document object gives us ways of accessing and changing the DOM.</p>
+					<p class="fragment left-align">Every DOM "node" has properties. They are connected like a family tree.</p>   
+					<p class="fragment left-align"> Parent (parentNode), children (childNodes, firstChild), siblings (prevSibling, nextSibling)</p> 
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 var bodyNode = document.body; // &lt;body>
 var htmlNode = document.body.parentNode; // &lt;html>
 for (var i = 0; i < document.body.childNodes.length; i++) {
@@ -391,28 +391,31 @@ for (var i = 0; i < document.body.childNodes.length; i++) {
 				
 				<section>
 					<h3>DOM Interaction: Easier</h3>
-					<p class = "fragment blue">Finding every element on the page by siblings and children is time consuming!</p>
-					<p class = "fragment">The document object also provides methods for finding DOM nodes without going one by one</p>
-					<div class = "fragment">
+					<p class="fragment blue">Finding every element on the page by siblings and children is time consuming!</p>
+					<p class="fragment">The document object also provides methods for finding DOM nodes without going one by one</p>
+					<div class="fragment" id="findByIdSection">
 						Find element by id
-						<pre><code contenteditable class = "html">
+						<pre><code contenteditable class="html">
 &lt;img id="mainpicture" src="http://girldevelopit.com/assets/pink-logo.png">
 						</code></pre>
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 var img = document.getElementById('mainpicture');            
 						</code></pre>
 					</div>
+					<aside class="notes">
+						<p>You can find the div containing those code snippets with #findByIdSection</p>
+					</aside>
 				</section>
 				
 				<section>
 					<h3>DOM Interaction: Easier</h3>
-					<div class = "fragment">
+					<div class="fragment">
 						Find element by tag name (p, li, div, etc.)
-						<pre><code contenteditable class = "html">
+						<pre><code contenteditable class="html">
 &lt;li class="peanut">Charlie Brown&lt;/li>
 &lt;li class="peanut">Linus van Pelt&lt;/li>
 						</code></pre>
-					<pre><code contenteditable class = "javascript">
+					<pre><code contenteditable class="javascript">
 var listItems = document.getElementsByTagName('li');
 for (var i =0; i < listItems.length; i++) {
 	var listItem = listItems[i];
@@ -425,13 +428,13 @@ for (var i =0; i < listItems.length; i++) {
 				<section>
 					<h3>Methods</h3>
 					<ul>
-						<li class = "fragment">Methods are functions that are associated with an object</li>
-						<li class = "fragment">The affect or return a value for a specific object</li>
-						<li class = "fragment">Used with dot notation</li>
+						<li class="fragment">Methods are functions that are associated with an object</li>
+						<li class="fragment">The affect or return a value for a specific object</li>
+						<li class="fragment">Used with dot notation</li>
 					</ul>
-					<div class = "fragment">
+					<div class="fragment">
 						Previously seen example:
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 var img = document.getElementById('mainpicture');
 						</code></pre>
 					</div>
@@ -439,21 +442,22 @@ var img = document.getElementById('mainpicture');
 				
 				<!-- Attributes-->
 				<section>
-					<h3>DOM Nodes -- Attributes</h3>
+					<h3>DOM Nodes&mdash;Attributes</h3>
 					<p>We can use node methods to set and retrieve attributes</p>
-					<div class = "fragment">
+					<div class="fragment">
 						getAttribute/setAttribute
-						<pre><code contenteditable class = "javascript">
-var img = document.getElementById('mainpicture');
+						<pre><code contenteditable class="javascript">
+var img = document.getElementById('examplepicture');
 img.getAttribute('src');
-img.setAttribute('src', 'http://girldevelopit.com/assets/pink-logo.png');
+img.setAttribute('src', 'images/pink-logo.png');
 						</code></pre>
 						
-						<pre><code contenteditable class = "javascript">
-var img = document.getElementById('mainpicture');
+						<pre><code contenteditable class="javascript">
+var img = document.getElementById('examplepicture');
 img.getAttribute('class');
 img.setAttribute('class', 'picture-class');
 						</code></pre>
+						<img src="images/boring-image.png" alt="Example image" id="examplepicture">
 					</div>
 				</section>
 				
@@ -461,69 +465,107 @@ img.setAttribute('class', 'picture-class');
 				<section>
 					<h3>DOM innerHTML</h3>
 					<p>Each DOM node has an innerHTML property:</p>
-				<div class = "fragment">
-					<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 document.body.innerHTML;
-					</code></pre>
-				</div>
-				<div class = "fragment">
-				You can set innerHTML yourself to change the contents of the node:
-					<pre><code contenteditable class = "javascript">
+						</code></pre>
+					</div>
+					<div class="fragment">
+						<p>You can set innerHTML yourself to change the contents of the node:</p>
+						<pre><code contenteditable class="javascript">
 document.body.innerHTML = '&lt;p>I changed the whole page!&lt;/p>';
-					</code></pre>
-				</div>
-				<div class = "fragment">
-				You can also just add to the innerHTML instead of replace everything:
-					<pre><code contenteditable class = "javascript">
+						</code></pre>
+					</div>
+					<div class="fragment">
+						<p>You can also just add to the innerHTML instead of replace everything:</p>
+						<pre><code contenteditable class="javascript">
 document.body.innerHTML += "...just adding this bit at the end of the page.";
-					</code></pre>
-				</div>
+						</code></pre>
+					</div>
+					<aside class="notes">
+						<p>This is the first time they've seen += on the slides.</p>
+					</aside>
 				</section>
 				
 				<!-- Create element and append child-->
 				<section>
 					<h3>DOM Modifying</h3>
 					<p>The document object can create new nodes:</p>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 document.createElement(tagName);
 document.createTextNode(text);
 document.appendChild();
 						</code></pre>
 					</div>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 var newImg = document.createElement('img');
-newImg.src = 'http://girldevelopit.com/assets/pink-logo.png';
+newImg.src = '/images/pink-logo.png';
 document.body.appendChild(newImg);
 						</code></pre>
 					</div>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 var newParagraph = document.createElement('p');
 var paragraphText = document.createTextNode('New Paragraph!');
 newParagraph.appendChild(paragraphText);
 document.body.appendChild(newParagraph);
-			</code></pre>
+						</code></pre>
 					</div>
-					
+					<aside class="notes">
+						<p>Show this on the exercise file, not the sides as the slide styles won't allow it to be seen except in the DOM tree in Inspector</p>
+					</aside>
 				</section>
 				
 				<!-- Exercise-->
 				<section>
 					<h3>Let's Develop It</h3>
+					<p class="green">Put it all together</p>
 					<ul>
-						<li>Put it all together</li>
-						<li>Modify your existing three functions to add new elements to the screen instead of fire an alert</li>
+						<li>Modify your existing three functions to add new elements to the screen instead of firing an alert</li>
 						<li>Keep in mind how to find an element, how to append an element, and how to change the inner html of an element</li>
 						<li>There are lots of possible solutions! Be creative!</li>
 					</ul>
 				</section>
+
+				<!-- Exercise-->
+				<section>
+					<h3>Bonus Problem</h3>
+					<p class="green">Hipster Sales Report</p>
+					<p>Your boss at the hipster ecommerce site wants to know which items costing more than $40 have sold in the past three days.</p>
+					<p>Using the provided data, create a list of item names that match the request and add the list to your html page.</p>
+					<pre><code contenteditable class="javascript">
+var purchases = [ 
+    { item: "Tote bag", timestamp: "Jan 21 2016 09:12:31 GMT-0500 (EST)", amount: 45.99 },
+    { item: "Seitan", timestamp: "Jan 22 2016 18:47:22 GMT-0500 (EST)", amount: 15.76 },
+    { item: "Bicycle", timestamp: "Jan 21 2016 12:45:47 GMT-0500 (EST)", amount: 100.00 },
+    { item: "PBR", timestamp: "Jan 17 2016 01:12:33 GMT-0500 (EST)", amount: 35.98 },
+    { item: "Sriracha", timestamp: "Jan 14 2016 14:18:12 GMT-0500 (EST)", amount: 24.99 },
+    { item: "McSweeney's", timestamp: "Jan 07 2016 11:11:11 GMT-0500 (EST)", amount: 78.90 },
+    { item: "Schlitz", timestamp: "Jan 13 2016 13:45:12 GMT-0500 (EST)", amount: 22.87 },
+    { item: "Hoodie", timestamp: "Jan 24 2016 05:14:22 GMT-0500 (EST)", amount: 50.00 },
+    { item: "Cardigan", timestamp: "Jan 22 2016 13:33:32 GMT-0500 (EST)", amount: 45.67 },
+    { item: "Narwhal Heirloom", timestamp: "Jan 21 2016 09:01:00 GMT-0500 (EST)", amount: 134.00 } 
+];
+					</code></pre>
+				</section>
+
+<!-- Exercise-->
+				<section>
+					<h3>Bonus Problem Hint</h3>
+					<p>An easy way to compare dates is with the <code>Date.getTime()</code> method. It returns the number of milliseconds since January 1st 1970.</p>
+
+					<pre><code contenteditable class="javascript">
+var startDate = new Date("Jan 21 2016 09:00:00 GMT-0500 (EST)").getTime()
+					</code></pre>					
+				</section>
+
 				<!-- -->
 				<section>
 					<h2>Questions?</h2>
-					<div style = "font-size:1200%; height:100%; margin-top:20%" class ="blue">?
-						<div class ="clear"></div></div>
+					<div style = "font-size:1200%; height:100%; margin-top:20%" class="blue">?
+						<div class="clear"></div></div>
 				</section>
 			</div>
 			<footer>
