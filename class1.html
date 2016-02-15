@@ -509,9 +509,12 @@ if (age >= 35) {
 	console.log('You have no voice in government (yet)!');
 }
 					</code></pre>
+					<aside class="notes">
+						<p>Show in console, stress the bailout after first.</p>
+					</aside>
 				</section>
 				
-				<!-- Exercise-->
+				<!-- Exercise-->	
 				<section>
 						<h3>Let's Develop It!</h3>
 						<p class="left-align">Add an if/else statement to our Lifetime Supply Calculator so that if the lifetime supply is greater than 40,000, you say "Wow! That's a lot!" otherwise, say "You seem pretty reasonable!"</p>
@@ -535,6 +538,9 @@ function sayHi(){
 sayHi();
 						</code></pre>
 					</div>
+					<aside class="notes">
+						<p>Call out the syntax—parens, brackets</p>
+					</aside>
 				</section>
 				
 				<!-- Functions cont.-->
@@ -553,6 +559,9 @@ var name = 'Pip, the mouse';
 sayHi(name);
 						</code></pre>
 					</div>
+					<aside class="notes">
+						<p>Talk about naming functions/args/variables</p>
+					</aside>
 				</section>
 				
 				<!-- Functions cont.-->
@@ -585,15 +594,15 @@ function addNumbers(num1, num2){
 	var result = num1 + num2;
 	return result; //Anything after this line won't be read
 }
-var sum  = addNumbers(5, 6);
+var sum = addNumbers(5, 6);
 						</code></pre>
 					</div>
 				</section>
 				
-				<!-- Functions cont.-->
+				<!-- Scope -->
 				<section>
 					<h3>Variable Scope</h3>
-					<p class="fragment">JavaScript variables have "function scope." They are visible in the function where they are defined</p>
+					<p class="fragment">JavaScript variables have "function scope." They are visible in the function where they are defined.</p>
 					<div class="fragment">
 						A variable with "local" scope:
 				 		<pre><code contenteditable class="javascript">
@@ -607,10 +616,10 @@ console.log(result); //will return undefined because result only exists inside t
 					</div> 
 				</section>
 				
-				<!-- Functions cont.-->
+				<!-- Scope cont.-->
 				<section>
 					<h3>Variable Scope</h3>
-					<p class="fragment">JavaScript variables have "function scope." They are visible in the function where they are defined</p>
+					<p class="fragment">Variables that are defined outside of a function are in the "global scope," and are visible to your entire script.</p>
 					<div class="fragment">
 						A variable with "global" scope:
 				 	<pre><code contenteditable class="javascript">
@@ -625,6 +634,26 @@ console.log(result); //will return 11 because the variable was defined outside t
 					</div>
 				</section>
 				
+				<!-- Scope cont.-->
+				<section>
+					<h3>Variable Scope</h3>
+					<p>If a function argument or variable declared in a function has the same name as a globally-scoped variable, the function will not use the global variable.</p>
+					<div>
+				 	<pre><code contenteditable class="javascript">
+var result;
+var num1 = 1;
+var num2 = 2;
+function addNumbers(num1, num2){
+	var result = num1 + num2;
+	return result;
+}
+var sum  = addNumbers(5, 6);
+console.log(result); //will return undefined because it was redeclared inside the function
+console.log(sum); // will return 11 because addNumbers used the function arguments 5,6 not the global num1, num2
+						</code></pre>
+					</div>
+				</section>
+
 				<!-- Exercise-->
 				<section>
 					<h3>Let's Develop It</h3>
