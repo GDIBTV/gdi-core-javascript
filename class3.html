@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="css/class.css">
 
 		<!-- For syntax highlighting -->
 		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
@@ -30,7 +31,7 @@
 				var link = document.createElement( 'link' );
 				link.rel = 'stylesheet';
 				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
+				link.href='css/print/pdf.css';
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
 		</script>
@@ -60,7 +61,7 @@
 				<!-- Welcome-->
 				<section>
 					<h3>Welcome!</h3>
-					<div class = "left-align">
+					<div class="left-align">
 					<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
 					<p class ="green">Some "rules"</p>
 					<ul>
@@ -76,109 +77,112 @@
 				<section>
 					<h3>What is a library?</h3>
 					<ul>
-						<li class = "fragment">Software libraries hold functions (not books!)</li>
-						<li class = "fragment">When you include a library, you can use all the functions in that library</li>
-						<li class = "fragment">That means: <span class = "pink">you get to take advantage of other people's experience!</li>
-						<li class = "fragment">And... <span class ="blue">Save time!</span></li>
+						<li class="fragment">Software libraries hold functions (not books!)</li>
+						<li class="fragment">When you include a library, you can use all the functions in that library</li>
+						<li class="fragment">That means: <span class="pink">you get to take advantage of other people's experience!</li>
+						<li class="fragment">And... <span class ="blue">Save time!</span></li>
 					</ul>
 				</section>
 				
 				<!-- What is jQuery-->
 				<section>
 					<h3>What is jQuery?</h3>
-					<p class = "fragment">jQuery is a <span class = "green">library</span> of JavaScript functions.</p>
-					<p class = "fragment">It contains many functions to help simplify your programming, including:</p>
+					<p class="fragment">jQuery is a <span class="green">library</span> of JavaScript functions.</p>
+					<p class="fragment">It contains many functions to help simplify your programming, including:</p>
 					<ul>
-						<li class = "fragment">HTML element selection &amp; manipulation</li>
-						<li class = "fragment">CSS manipulation</li>
-						<li class = "fragment">HTML events</li>
-						<li class = "fragment">JavaScript effects and animations</li>
+						<li class="fragment">HTML element selection &amp; manipulation</li>
+						<li class="fragment">CSS manipulation</li>
+						<li class="fragment">HTML events</li>
+						<li class="fragment">JavaScript effects and animations</li>
 					</ul>
 				</section>
 				
 				<section>
 					<h3>Why use jQuery?</h3>
 					<ul>
-						<li class = "fragment">The most popular JavaScript library</li>
-						<li class = "fragment">jQuery empowers you to "write less, do more."</li>
-						<li class = "fragment">Great <a href = "http://docs.jquery.com/" target = "_blank">documentation and tutorials</a></li>
-						<li class = "fragment">Used by nearly 20 million(!) websites</li>
+						<li class="fragment">The most popular JavaScript library</li>
+						<li class="fragment">jQuery empowers you to "write less, do more."</li>
+						<li class="fragment">Great <a href="http://docs.jquery.com/" target="_blank">documentation and tutorials</a></li>
+						<li class="fragment">Used by over <a href="http://trends.builtwith.com/javascript/jQuery" target="_blank">53 million</a>(!) websites</li>
 					</ul>
 				</section>
 				
-				<section>
+<!-- 				<section>
 					<h3>jQuery: A Brief History</h3>
 					<ul>
-						<li class = "fragment">jQuery was created by John Resig, a JavaScript tool developer at Mozilla.</li>
-						<li class = "fragment">January 2006: John announced jQuery at BarCampNYC: BarCampNYC Wrap-up</li>
-						<li class = "fragment">September 2007: A new user interface library is added to jQuery: jQuery UI: Interactions and Widgets</li>
-						<li class = "fragment">September 2008: Microsoft and Nokia announce their support for jQuery</li>
-						<li class = "fragment">December 2009: jQuery wins .Net Magazine's Award for Best Open Source Application</li>
+						<li class="fragment">jQuery was created by John Resig, a JavaScript tool developer at Mozilla.</li>
+						<li class="fragment">January 2006: John announced jQuery at BarCampNYC: BarCampNYC Wrap-up</li>
+						<li class="fragment">September 2007: A new user interface library is added to jQuery: jQuery UI: Interactions and Widgets</li>
+						<li class="fragment">September 2008: Microsoft and Nokia announce their support for jQuery</li>
+						<li class="fragment">December 2009: jQuery wins .Net Magazine's Award for Best Open Source Application</li>
 					</ul>
-				</section>
+				</section> -->
 				
 				<!-- Including jquery-->
 				<section>
 					<h3>Including jQuery</h3>
 					Two ways to include jQuery on your page:
-					<div class = "fragment">
+					<div class="fragment">
 						Download the library, store it locally:
-						<pre><code contenteditable class = "html">
+						<pre><code contenteditable class="html">
 &lt;head>
-	&lt;script type="text/javascript" src="jquery.js">&lt;/script>
+	&lt;script src="jquery.js">&lt;/script>
 &lt;/head>
 						</code></pre>
 					</div>
-					<div class = "fragment">
-						Include the the live library:
-						<pre><code contenteditable class = "html">
+					<div class="fragment">
+						Include the library from a <abbr title="Content Delivery Network">CDN</abbr>:
+						<pre><code contenteditable class="html">
 &lt;head>
-	&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js">
+	&lt;script src="https://code.jquery.com/jquery-latest.min.js">
 	&lt;/script>
 &lt;/head>
 						</code></pre>
 					</div>
-					<div class = "fragment">
-						Note: live code can change! It's always best to download
+					<div class="fragment">
+						Note: CDN-hosted code can change or be unavailable! It's always best to specify the exact version you want, <a href="https://css-tricks.com/snippets/jquery/fallback-for-cdn-hosted-jquery/" target="_blank">and provide a fallback</a>. 
 					</div>
 				</section>
 				
 				<!-- Selectors-->
 				<section>
 					<h3>jQuery Selectors</h3>
-					<p>Remember <span class = "green">document.getElementById()</span> and <span class = "green">documet.getElementsByTagName()</span>? </p>
-					<p class = "fragment"> jQuery selectors let you get elements by: </p>
+					<p>Remember <span class="green">document.getElementById()</span> and <span class="green">document.getElementsByTagName()</span>? </p>
+					<p class="fragment"> jQuery selectors let you get elements by: </p>
 					<ul>
-						<li class = "fragment">Element name (div, p)
-						<pre><code contenteditable class = "javascript">
-var divs = $("div"); // All divs on page
+						<li class="fragment">Element name (div, p)
+						<pre><code contenteditable class="javascript">
+var $divs = $("div"); // All divs on page
 						</code></pre>
 						</li>
-						<li class = "fragment">ID name (#mainpicture, #results)
-						<pre><code contenteditable class = "javascript">
-var img = $("#mainpicture"); //img with id mainpicture
+						<li class="fragment">ID name (#mainpicture, #results)
+						<pre><code contenteditable class="javascript">
+var $img = $("#mainpicture"); //img with id mainpicture
 						</code></pre>
 						</li>
-						<li class = "fragment">Class name (.result, .picture)
-						<pre><code contenteditable class = "javascript">
-var images = $(".picture"); //All images with class picture 
+						<li class="fragment">Class name (.result, .picture)
+						<pre><code contenteditable class="javascript">
+var $images = $(".picture"); //All images with class picture 
 						</code></pre> 
 						</li>
 					</ul>
+					<aside class="notes">
+						<p>Point out naming convention of $varName for jQuery objects</p>
+					</aside>
 				</section>
 			
 				
 				<!-- Actions-->
 				<section>
 					<h3>jQuery Actions</h3>
-					<div class = "left-align">
-						<p class = "fragment">jQuery has hundreds of actions that can be performed on any element</p>
-						<p class = "fragment">All the actions are methods</p>
-						<p class = "fragment">As methods they are called with dot notation</p>
+					<div class="left-align">
+						<p class="fragment">jQuery has hundreds of actions that can be performed on any element</p>
+						<p class="fragment">All the actions are methods</p>
+						<p class="fragment">As methods they are called with dot notation</p>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 						Action format
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 $(selector).action();     
 						</code></pre>
 					</div>
@@ -187,79 +191,72 @@ $(selector).action();
 				<!-- Attributes and css-->
 				<section>
 					<h3>Updating attributes and css</h3>
-					<div class = "fragment">
-						<pre><code contenteditable class = "html">
-&lt;img id="mainpicture" src="http://girldevelopit.com/assets/pink-logo.png">
+					<div class="fragment">
+						<pre><code contenteditable class="html">
+&lt;img id="mainpicture" src="images/boring-image.png">
 						</code></pre>
-					</div>
-					<div class = "fragment">
-						Attribute get and set
-						<pre><code contenteditable class = "javascript">
-var img = $('#mainpicture');
-img.attr('src');
-img.attr('src', 'http://girldevelopit.com/assets/pink-logo.png');
+
+						<pre><code contenteditable class="javascript">
+var $img = $('#mainpicture');
+
+// Attribute Get/Set
+$img.attr('src');
+$img.attr('src', 'images/pink-logo.png');
+
+// CSS Get/Set
+$img.css('width');
+$img.css('width', '200px');
 						</code></pre>
-					</div>
-					<div class = "fragment">
-						CSS property get and set
-						<pre><code contenteditable class = "javascript">
-var img = $('#mainpicture');
-img.css('width');
-img.css('width', '200px');
-						</code></pre>
+						<img id="mainpicture" src="images/boring-image.png">
 					</div>
 				</section>
 				
 				<!-- html values-->
 				<section>
 					<h3>Updating values and html</h3>
-					<div class = "fragment">
-						<pre><code contenteditable class = "html">
-&lt;div id = "results">Boo!&lt;/div>         
-						</code></pre>
-					</div>
-					<div class = "fragment">
-						Get and set html value
-						<pre><code contenteditable class = "javascript">
-var div = $('#results');
-div.html();
-div.html('New html!');
-						</code></pre>
-					</div>
+					<pre><code contenteditable class="html">
+&lt;div id="results-slide-9">Boo!&lt;/div>         
+					</code></pre>
+
+					<p>Get and set html value</p>
+					<pre><code contenteditable class="javascript">
+var $results = $('#results-slide-9');
+$results.html();
+$results.html('New html!');
+					</code></pre>
+
+					<p><small>Try it!</small></p>
+					<div id="results-slide-9">Boo!</div>
 				</section>
 				
 				<!-- Append and prepend-->
 				<section>
 					<h3>Append and Prepend</h3>
-					<div class = "fragment">
-						<pre><code contenteditable class = "html">
-&lt;div id = "results">Boo!&lt;/div>         
-						</code></pre>
-					</div>
-					<div class = "fragment">
-						Append html
-						<pre><code contenteditable class = "javascript">
-var div = $('#results');
-div.append('Additional html');
-						</code></pre>
-					</div>
-					<div class = "fragment">
-						Prepend html
-						<pre><code contenteditable class = "javascript">
-var div = $('#results');
-div.prepend('Additional html (on top)');
-						</code></pre>
-					</div>
+					<pre><code contenteditable class="html">
+&lt;div id="results-slide-10">Boo!&lt;/div>         
+					</code></pre>
+
+					<pre><code contenteditable class="javascript">
+var $results = $('#results-slide-10');
+
+// Append html
+$results.append('Additional html');
+
+// Prepend html
+$results.prepend('Additional html (on top)');
+					</code></pre>
+					<p><small>Try it!</small></p>
+					<div id="results-slide-10">Boo!</div>
 				</section>
 				
 				<section>
 					<h3>Creating new element</h3>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
-var newDiv = $('&lt;div>&lt;/div>');
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
+var $newDiv = $('&lt;div>&lt;/div>');
 						</code></pre>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 						Seriously. That's it!
 					</div>
 				</section>
@@ -268,81 +265,93 @@ var newDiv = $('&lt;div>&lt;/div>');
 				<section>
 					<h3>Let's Develop It!</h3>
 					<p>Try to convert last week's DOM interaction into jQuery.</p>
-					<p>Don't forget to include jQuery in your html head!</p>
+					<p>Don't forget to include jQuery in your HTML head!</p>
 				</section>
 				
 				<!-- Document Ready-->
 				<section>
 					<h3>Document Ready</h3>
-					<div class = "left-align">
+					<div class="left-align">
 					<p>Webpages take time to load</p>
-					<p class = "fragment">Almost always, you don't want the JavaScript to be called until the page is loaded</p>
+					<p class="fragment">Almost always, you don't want the JavaScript to be called until the page is loaded</p>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 						Document ready is a method called when the page is loaded
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 $(document).ready(function(){
 	// your code here
 });
 						</code></pre>
 					</div>
-					<div class = "fragment left-align">
-						<span class = "yellow">Note:</span> The function() inside is an "anonymous function". It has no name, but still performs like a function.
+					<div class="fragment left-align">
+						<span class="yellow">Note:</span> The function() inside is an "anonymous function". It has no name, but still performs like a function.
 					</div>
 				</section>
+
+				<!-- Document Ready-->
+				<section>
+					<h3>Where to Put Your JavaScript</h3>
+					<p>When you wrap your code with <code>$(document).ready(function(){});</code>, you can follow best practices and load your JavaScript at the end of your HTML document, right before the closing &lt;/body> tag.</p>
+
+					<p>This lets your content load quickly, and ensures the DOM is fully loaded before you start modifying it.</p>
+
+					<aside class="notes">
+						<p>Demo what happens if you try to access the DOM before it is ready!</p>
+					</aside>
+				</section>				
 				
 				<!-- HTML Events-->
 				<section>
 					<h3>HTML events</h3>
 					<p>Events occur on a webpage via user interaction</p>
-					<p class = "fragment">Common Events:</p>
+					<p class="fragment">Common Events:</p>
 					<ul>
-						<li class = "fragment">mouseenter -- mouse goes inside an element</li>
-						<li class = "fragment">mouseleave -- mouse leaves an element</li>
-						<li class = "fragment">click -- mouse clicks an element</li>
-						<li class = "fragment"><a href = "http://api.jquery.com/category/events/" target = "_blank">Other events</a></li>
+						<li class="fragment">mouseenter -- mouse goes inside an element</li>
+						<li class="fragment">mouseleave -- mouse leaves an element</li>
+						<li class="fragment">click -- mouse clicks an element</li>
+						<li class="fragment"><a href="http://api.jquery.com/category/events/" target="_blank">Other events</a></li>
 					</ul>
 				</section>
 				
 				<section>
 					<h3>Handling events</h3>
-					<pre><code contenteditable class = "javascript">
-$(selector).mouseenter(function(){
+					<pre><code contenteditable class="javascript">
+$(selector).on('mouseenter', function(){
 	//code when the mouse enters
 })
 					</code></pre>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
-$('.box').mouseenter(function(){
+					<div class="fragment">
+						<pre><code contenteditable class="javascript box">
+$('.box').on('mouseenter', function(){
 	$(this).css('background-color', 'purple')
 })
 						</code></pre>
 					</div>
-					<div class = "fragment left-align">
-						<div>The <span class = "green">$(this)</span> selector in jQuery refers to the element on whom the action was called.</div>
-						<div>Here <span class = "green">$(this)</span> is the <span class = "blue">$('.box')</span> that the mouse entered.
+					<div class="fragment left-align">
+						<div>The <span class="green">$(this)</span> selector in jQuery refers to the element on whom the action was called.</div>
+						<div>Here <span class="green">$(this)</span> is the <span class="blue">$('.box')</span> that the mouse entered.
 					</div>
 				</section>
 				
 				<section>
 					<h3>Handling event examples</h3>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
-$('.box').mouseenter(function(){
+					<div class="fragment">
+						<pre><code contenteditable class="javascript box">
+$('.box').on('mouseenter', function(){
 	$(this).css('background-color', 'purple')
 })
 						</code></pre>
 					</div>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
-$('.box').mouseleave(function(){
+					<div class="fragment">
+						<pre><code contenteditable class="javascript box">
+$('.box').on('mouseleave', function(){
 	$(this).css('background-color', 'orange')
 })
 						</code></pre>
 					</div>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
-$('.box').click(function(){
+					<div class="fragment">
+						<pre><code contenteditable class="javascript box">
+$('.box').on('click', function(){
 	$(this).css('background-color', 'green')
 })
 						</code></pre>
@@ -351,10 +360,10 @@ $('.box').click(function(){
 				
 				<section>
 					<h3>Combining events</h3>
-					<p>If you want multiple events to happen on the same element, you should use the bind method</p>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
-$('.box').bind({
+					<p>If you want multiple events to happen on the same element, you can pass an object to the <code>on</code> method. We call this an <strong>event map</strong>.</p>
+					<div class="fragment">
+						<pre><code contenteditable class="javascript box">
+$('.box').on({
 	click: function() {
 		$(this).css('background-color', 'green')
 	},
@@ -373,11 +382,12 @@ $('.box').bind({
 				<section>
 					<h3>Let's Develop It</h3>
 					<ul>
-						<li>Add a div to your html that is 100px by 200px</li>
-						<li>Bind events to the div in your javascript file</li>
-						<li>Don't forget to surround your events with document ready</li>
-						<li>Try to change size, color, or event the html inside the div</li>
-						<li>Bonus: change all the onclick events to jQuery click events</li>
+						<li>Move your &lt;script> tags to the end of your HTML file.</li>
+						<li>Add a div to your HTML that is 100px by 200px</li>
+						<li>Bind events to the div in your JavaScript file</li>
+						<li>Don't forget to surround your events with document ready!</li>
+						<li>Try to change size, color, or event the HTML inside the div</li>
+						<li>Bonus: change all the onclick events on your buttons to jQuery click events</li>
 					</ul>
 				</section>
 				
@@ -385,21 +395,23 @@ $('.box').bind({
 				<section>
 					<h3>HTML forms</h3>
 					<p>HTML Forms allow users to enter information</p>
-					<div class = "fragment">
-						<pre><code contenteditable class = "html">
-&lt;form id ="about-me">
-	&lt;input type = "text" id = "name" placeholder = "Enter a name"/>
-	&lt;label>Do you like popcorn&lt;/label>
-	Yes &lt;input type = "radio" name = "popcorn" val = "yes"/>
-	No &lt;input type = "radio" name = "popcorn" val = "no"/>
-	&lt;label>Favorite Dinosaur&lt;/label>
-	&lt;select id = "dinosaur">
-		&lt;option value = "t-rex">Tyrannosaurus Rex&lt;/option>
-		&lt;option value = "tri">Triceratops&lt;/option>
-		&lt;option value = "stego">Stegosaurus&lt;/option>
-		&lt;option value = "other">Other&lt;/option>
+					<div class="fragment">
+						<pre><code contenteditable class="html">
+&lt;form id="about-me">
+	&lt;input type="text" id="name" placeholder="Enter a name"/>
+	&lt;label>Do you like popcorn?&lt;/label>
+	&lt;label for="popcorn-yes">Yes&lt;/label>
+		&lt;input type="radio" name="popcorn" id="popcorn-yes" value="yes"/>
+	&lt;label for="popcorn-no">No &lt;/label>
+		&lt;input type="radio" name="popcorn" id="popcorn-no" value="no"/>
+	&lt;label for="dinosaur">Favorite Dinosaur&lt;/label>
+	&lt;select id="dinosaur">
+		&lt;option value="t-rex">Tyrannosaurus Rex&lt;/option>
+		&lt;option value="tri">Triceratops&lt;/option>
+		&lt;option value="stego">Stegosaurus&lt;/option>
+		&lt;option value="other">Other&lt;/option>
 	&lt;/select>
-	&lt;input type = "submit" value = "Go!" style = "padding: 7px; font-size:1em"/>
+	&lt;input type="submit" value="Go!"/>
 &lt;/form>
 						</code></pre>
 					</div>
@@ -408,21 +420,24 @@ $('.box').bind({
 				<section>
 					<h3>HTML forms</h3>
 					<p>HTML Forms allow users to enter information</p>
-					<div class = "fragment left-align">
-<form>
-	<input type = "text" id = "name" placeholder = "Enter a name" style = "width:300px; padding: 7px; font-size:1em"/><br/>
-	<label>Do you like popcorn</label><br/>
-	Yes <input type = "radio" name = "popcorn" val = "yes" style ="font-size:1em"/>
-	No <input type = "radio" name = "popcorn" val = "no" style ="font-size:1em"/><br/>
-	<label>Favorite Dinosaur</label><br/>
-	<select id = "dinosaur" style = "padding: 7px; font-size:1em">
-		<option>Tyrannosaurus Rex</option>
-		<option>Triceratops</option>
-		<option>Stegosaurus</option>
-		<option>Other</option>
-	</select><br/>
-	<input type = "submit" value = "Go!" style = "padding: 7px; font-size:1em"/>
-</form>
+					<div class="fragment">
+						<form id="about-me">
+							<input type="text" id="name" placeholder="Enter a name"/><br/>
+							<label>Do you like popcorn?</label><br/>
+							<label for="popcorn-yes">Yes</label>
+							<input type="radio" name="popcorn" id="popcorn-yes" value="yes"/>
+							<label for="popcorn-no">No </label>
+							<input type="radio" name="popcorn" id="popcorn-no" value="no"/>
+							<br>
+							<label for="dinosaur">Favorite Dinosaur</label><br/>
+							<select id="dinosaur">
+								<option value="t-rex">Tyrannosaurus Rex</option>
+								<option value="tri">Triceratops</option>
+								<option value="stego">Stegosaurus</option>
+								<option value="other">Other</option>
+							</select><br/>
+							<input type="submit" value="Go!"/>
+						</form>
 					</div>
 				</section>
 				
@@ -430,19 +445,19 @@ $('.box').bind({
 				<section>
 					<h3>Values from Forms</h3>
 					<p>You can use JavaScript to get values from a form</p>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
 $('#name').val();
 $('select#dinosaur').val();
-$('input:radio[name=popcorn]:checked').val();
+$('input:radio[name="popcorn"]:checked').val();
 						</code></pre>
 					</div>
-					<div class = "fragment">
+					<div class="fragment">
 						Or set values of a form
-						<pre><code contenteditable class = "javascript">
+						<pre><code contenteditable class="javascript">
 $('#name').val('Mitch');
 $('select#dinosaur').val('stego');
-$('input:radio[name=popcorn]:checked').val('no');
+$('input:radio[name="popcorn"][value="no"]').attr('checked',true);
 						</code></pre>
 					</div>
 				</section>
@@ -450,14 +465,14 @@ $('input:radio[name=popcorn]:checked').val('no');
 				<section>
 					<h3>Values from Forms</h3>
 					<p>jQuery has an event for form submission</p>
-					<div class = "fragment">
-						<pre><code contenteditable class = "javascript">
-$('#about-me').submit(function(event){
+					<div class="fragment">
+						<pre><code contenteditable class="javascript">
+$('#about-me').on('submit', function(event){
 	//code to execute after submission
-	return false;
+	event.stopPropagation();
 });
 						</code></pre>
-						<span class = "yellow">"return false"</span> to prevent the form trying to submit to a server.
+						You can use <span class="yellow">"event.stopPropagation();"</span> to prevent the form trying to submit to a server.
 					</div>
 				</section>
 				
@@ -467,12 +482,13 @@ $('#about-me').submit(function(event){
 					<ul>
 						<li>Choose one (or all!) of your functions made so far</li>
 						<li>i.e. lifetime supply, favorite things, or my friends</li>
-						<li>Create a form to send dynamic data to the function when you click the button</li>
+						<li>Create a form to send dynamic data to the function when you click the submit button</li>
 						<li>Don't forget to add parameters to your existing functions!</p>
 						<li>This is a little harder than all the other exercises.</li>
 						<li>Be creative!</li>
 					</ul>
 				</section>
+				
 				<!-- -->
 				<section>
 					<h2>Questions?</h2>
@@ -496,7 +512,7 @@ $('#about-me').submit(function(event){
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
-						Reveal.initialize({
+			Reveal.initialize({
 				controls: true,
 				progress: true,
 				history: true,
@@ -517,6 +533,9 @@ $('#about-me').submit(function(event){
 			});
 
 		</script>
+
+		<!-- To enable Dev Tools interactions with slide examples in the same window -->
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
 	</body>
 </html>

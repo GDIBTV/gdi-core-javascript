@@ -71,3 +71,7 @@
 .reveal .slides section .fragment.visible.muted { opacity: .35;}
 
 .reveal .show-outline { outline: 1px solid #000; }
+
+input, select {
+    transform: scale(2);
+}
