@@ -5,19 +5,19 @@ function calculate(){
 
     var days = (oldAge - age) * 356;
     var total = perDay * days;
-    var resultDiv = $('#lifetime-supply')
+    var $resultDiv = $('#lifetime-supply')
     if(total > 40000){
-        resultDiv.html("You will need " + total + " to last you until the ripe old age of " + oldAge + ". Wow! That's a lot!");
+        $resultDiv.html("You will need " + total + " to last you until the ripe old age of " + oldAge + ". Wow! That's a lot!");
     }else{
-        resultDiv.html("You will need " + total + " to last you until the ripe old age of " + oldAge + ". You seem pretty reasonable");
+        $resultDiv.html("You will need " + total + " to last you until the ripe old age of " + oldAge + ". You seem pretty reasonable");
     } 
 }
 
 function favoriteThings(){
     var favoriteThings = ['Rabbits', 'Orange', 'Yogurt', 'Brussel Sprouts', 'Otters'];
-    var resultDiv = $('#favorite-things');
+    var $resultDiv = $('#favorite-things');
     
-    var resultParagraph = $('<p></p>');
+    var $resultParagraph = $('<p></p>');
     var result = 'My favorite things are: ';
     
     for (var i = 0; i<favoriteThings.length; i++){
@@ -27,8 +27,8 @@ function favoriteThings(){
             result += "and " + favoriteThings[i] + '.';
         }
     }
-    resultParagraph.append(result);
-    resultDiv.append(resultParagraph);
+    $resultParagraph.append(result);
+    $resultDiv.append($resultParagraph);
 }
 function myFriends(){
     var friends = [
@@ -39,16 +39,16 @@ function myFriends(){
         {name: 'Tooth Fairy',
         hair: 'blue'}
     ];
-    var resultDiv = $('<div></div>')
+    var $resultDiv = $('<div></div>')
     
     var introParagraph = $('<p>My friends are:</p>');
-    resultDiv.append(introParagraph)
+    $resultDiv.append(introParagraph)
     
     for(var i = 0; i < friends.length; i++){
-        var resultParagraph = $('<p>' + describeFriend(friends[i]) + '</p>');
-        resultDiv.append(resultParagraph);
+        var $resultParagraph = $('<p>' + describeFriend(friends[i]) + '</p>');
+        $resultDiv.append($resultParagraph);
     }
-    $('body').append(resultDiv);
+    $('body').append($resultDiv);
 }
 function describeFriend(friend){
     return "My friend " + friend.name + " has " + friend.hair + " hair. ";
