@@ -1,6 +1,6 @@
 $(document).ready(function(){
     getMeetups();
-    $('.box').bind({
+    $('.box').on({
         click: function() {
           $(this).css('background-color', 'green')
           $(this).html('Clicked!')
@@ -14,24 +14,24 @@ $(document).ready(function(){
           $(this).html('Bye!')
         }
     });
-    $('#calculate').submit(function(event){
+    $('#calculate').on('submit',function(event){
         var givenAge = $('#age').val();
         var givenSnack = $('#snack').val();
         var givenPerDay = $('#times-per-day').val();
         $('#lifetime-supply').html(calculate(givenAge, givenSnack, givenPerDay));
-        return false;
+        event.preventDefault();
     });
-    $('#favorites').submit(function(event){
+    $('#favorites').on('submit',function(event){
         var givenThing = $('#thing').val();
         favoriteThings(givenThing);
-        return false
+        event.preventDefault();
     });
-    $('#friends').submit(function(event){
+    $('#friends').on('submit',function(event){
        var name = $('#friend-name').val();
        var hair = $('#friend-hair').val()
        var friend = {name: name, hair:hair};
         myFriends(friend);
-        return false;
+        event.preventDefault();
     });
 });
 
@@ -75,10 +75,10 @@ function favoriteThings(thing){
     $('#favorite-things').append('<p>'+ thing +'</p>');
 }
 function myFriends(friend){
-    var resultDiv = $('<div></div>')
-    var resultParagraph = $('<p>' + describeFriend(friend) + '</p>');
-    resultDiv.append(resultParagraph);
-    $('body').append(resultDiv);
+    var $resultDiv = $('<div></div>')
+    var $resultParagraph = $('<p>' + describeFriend(friend) + '</p>');
+    $resultDiv.append($resultParagraph);
+    $('body').append($resultDiv);
 }
 function describeFriend(friend){
     return "My friend " + friend.name + " has " + friend.hair + " hair. ";
