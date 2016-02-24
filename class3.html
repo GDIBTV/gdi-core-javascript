@@ -469,10 +469,10 @@ $('input:radio[name="popcorn"][value="no"]').attr('checked',true);
 						<pre><code contenteditable class="javascript">
 $('#about-me').on('submit', function(event){
 	//code to execute after submission
-	event.stopPropagation();
+	event.preventDefault();
 });
 						</code></pre>
-						You can use <span class="yellow">"event.stopPropagation();"</span> to prevent the form trying to submit to a server.
+						You can use <span class="yellow">"event.preventDefault();"</span> to prevent the form trying to submit to a server.
 					</div>
 				</section>
 				
